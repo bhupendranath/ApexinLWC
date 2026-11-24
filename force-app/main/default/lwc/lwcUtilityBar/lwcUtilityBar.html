@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="LWC in Utility Bar">
+        <div class="slds-p-around_medium">
+            <!--We dont have much space in utility bar so I add column="1"-->
+            <!--Add component utility bar: Setup >> App Manager >> Select any "App" >> Add utility Items >> Save-->
+            <lightning-record-form object-api-name="Account" fields={fieldList}
+            column="1" mode="view"></lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

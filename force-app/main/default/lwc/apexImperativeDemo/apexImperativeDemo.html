@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Apex Imperative Demo" icon-name="custom:custom40">
+        <div class="slds-m-around_medium">
+            <lightning-button variant="brand" label="Call Apex Method & get Acc List" onclick={handleClick}></lightning-button>
+        </div>
+        
+        <br>
+
+        <template if:true={accounts}>
+            <template for:each={accounts} for:item="accounts">
+                <div class="slds-box slds-box_xx-small" key={accounts.Id}>
+                    <p><strong>Name: </strong>{accounts.Name}</p>
+                    <p><strong>Type: </strong>{accounts.Type}</p>
+                    <p><strong>Industry: </strong>{accounts.Industry}</p>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>
+
